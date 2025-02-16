@@ -1,0 +1,26 @@
+[project]
+name = "tds-project1"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+    "beautifulsoup4>=4.13.3",
+    "fastapi>=0.115.8",
+    "gitpython>=3.1.44",
+    "httpx>=0.28.1",
+    "markdown>=3.7",
+    "numpy>=2.2.3",
+    "pillow>=11.1.0",
+    "pydantic>=2.10.6",
+    "pytesseract>=0.3.13",
+    "python-dateutil>=2.9.0.post0",
+    "requests>=2.32.3",
+    "speechrecognition>=3.14.1",
+    "uvicorn>=0.34.0",
+]
+
+[dependency-groups]
+dev = [
+    "ruff>=0.9.6",
+]
