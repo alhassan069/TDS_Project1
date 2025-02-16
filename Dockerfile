@@ -25,6 +25,7 @@ RUN uv sync --frozen --no-cache
 
 RUN npm install --no-cache-dir prettier@3.4.2
 
+EXPOSE 8000
 
 # Run the application.
-CMD ["/app/.venv/bin/uvicorn", "main:app", "--port", "80", "--host", "0.0.0.0"]
+CMD ["/app/.venv/bin/uvicorn", "main:app", "--port", "8000", "--host", "0.0.0.0"]

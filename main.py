@@ -853,7 +853,9 @@ def task_runner(task_description):
         else:
             output.append(f"Unknown action: {action}")
     return "\n".join(output)
-
+@app.get("/")
+def getHome():
+    return "FASTAPI server running"
 # API Endpoints
 @app.post("/run")
 async def run_task(task: str = Query(..., description="Task description")):
